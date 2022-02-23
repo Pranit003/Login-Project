@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript">
+		
+		function login_check()
+        {
+            var u=document.f1.uname.value;
+            var p=document.f1.pass.value;
+
+            if(u=="Pranit" && p=="Pranit@123")
+            {
+                window.open('HW Dash Board.html');  
+            }
+            else
+            {
+				alert("Invalid User")
+			}
+
+		}
+	</script>
+
+<style type="text/css">
+	body{
+		    background-image: url("bg-2.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			font-family: times new roman;
+			background-position: center;
+		}
+
+		.jumbotron
+		{
+			background-image: url("bg-2.jpg");
+			background-repeat: no-repeat;
+			background-size: 100% 200px;
+			margin-bottom: 10px;
+			color: white;
+		}
+
+		.h1{
+			color: white;
+			font-weight: bold;
+			text-align: center;
+		}
+
+		#login
+		{
+			background-image: url("bg-2.jpg");
+			height: 370px;
+			width: 400px;
+			padding: 5px;
+			background-color: rgba(0, 0, 0, 0.6);
+			border-radius: 5px;
+			float: right;
+			margin-top: 5%;
+			margin-right: 500px;
+		}
+
+		.input
+		{
+			padding: 10px;
+			margin: 10px;
+			width: 90%;
+			outline: none;
+			border:  none;
+			border-radius: 3px;
+			color: white;
+			font-size: 23px;
+			background: transparent;
+			border-bottom: 2px solid white;
+		}
+
+		.button
+		{
+			width: 80%;
+			padding: 8px;
+			margin: 5px;
+			border-radius: 5px;
+			background-color: purple;
+			color: white;
+			border: none;
+			outline: none;
+			margin: 20px 0px 0px 0px;
+		}
+
+		::placeholder
+		{
+			opacity: 0.5;
+			color: white;
+			font-size: 20px;
+		}
+
+		span{
+			color: white;
+		}
+
+	</style>
+	
+	
+
+</head>
+<body>
+
+	<div class="jumbotron">
+		<h1>Crystel Developer</h1>
+	</div>
+	<div id="login">
+		<form name="f1" action>
+			<table cellpadding="10" width="100%">
+				<tr>
+					<td class="h1"><h1>Login</h1></td>
+				</tr>
+				<tr>
+					<td>
+						<input type="username" name="uname" class="input" placeholder="Username" >
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<input type="password" name="pass" class="input" placeholder="Password" >
+					</td>
+				</tr>
+
+				<tr>
+					<td align="center" ><input type="submit" class="button btn btn-warning" value="Submit" onclick="login_check()"></td>
+				</tr>
+				<tr>
+					<td align="center"><input type="reset" class="button btn btn-warning" value="Cancel"></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  	<script type="text/javascript">
+		
+		function date()
+		{
+			var d= new Date();
+
+			var day=d.getDay();
+			var month=d.getMonth();
+			var y=d.getYear();
+
+			var date=day+"-"+month+"-"+y;
+
+			document.getElementById("date").innerHTML=date;
+		}
+
+	</script>
+
+	<style type="text/css">
+		body
+		{
+			margin: 0px;
+			font-family: times new roman;
+		} 
+
+		.jumbotron
+		{
+			background-image: url("bg-2.jpg");
+			background-repeat: no-repeat;
+			background-size: 100% 200px;
+			margin-bottom: 10px;
+			color: white;
+		}   
+
+		h1{
+			font-size: 30px;
+			font-family: Arial;
+		}
+
+		.btn{
+			text-decoration: none;
+			color: black;
+			padding: 5px 10px;
+			margin: 5px;
+		}
+
+		a{
+			text-decoration: none;
+			color: black;
+		}
+
+		a:hover{
+			text-decoration: none;
+			color: white;
+		}
+
+		th{
+			text-decoration-line: underline;
+		}
+
+		#a{
+			font-size: 30px;
+			font-weight: bold;
+		}
+
+		*{
+			font-size: 17px;
+		}
+
+		.input{
+			width: 80%;
+			padding: 5px;
+			margin: 1% 0% 1% 0%;
+		}
+
+	</style>
+
+</head>
+<body onload="date()">
+	<div class="jumbotron">
+		<h1>Crystel Developer</h1>
+	</div>
+
+		<h1 id="a">Vendor Registration</h1>
+
+	<form name="f1">
+		<table cellpadding="5" width="80%">
+			<tr>
+				<td>Date</td>
+				<td><input type="text" id="date" readonly ></td>
+			</tr>
+			<th><font color="blue">Contact Information</font></th>
+			<tr>
+				<td>Company Name :</td>
+				<td><input type="text" name="cname" class="input"></td>
+			</tr>
+
+			<tr>
+				<td>Address :</td>
+				<td><input type="text" name="cname" class="input"></td>
+			</tr>
+
+			<tr>
+				<td>City, State Zip :</td>
+				<td><input type="text" name="cname" class="input"></td>
+			</tr>
+
+			<tr>
+				<td>Phone :</td>
+				<td><input type="number" name="cname" class="input"></td>
+			</tr>
+
+			<tr>
+				<td>Fax :</td>
+				<td><input type="text" name="cname" class="input"></td>
+			</tr>
+
+
+				<th><font color="blue">Type of Business</font></th>
+			
+
+			<tr>
+				<td>Products :</td>
+				<td>
+					<textarea cols="80" rows="5" class="input"></textarea>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Services :</td>
+				<td>
+					<textarea cols="80" rows="5" class="input"></textarea>
+				</td>
+			</tr>
+
+			
+			<th><font color="blue">Is Your Company...</font></th>
+			
+
+			<tr>
+				<td>Insured?</td>
+				<td>
+					<input type="radio" name="g">Yes&nbsp;&nbsp;
+					<input type="radio" name="g">No
+				</td>		
+			</tr>
+			<tr>
+				<td>Bonded?</td>
+				<td>
+					<input type="radio" name="g">Yes&nbsp;&nbsp;
+					<input type="radio" name="g">No
+				</td>
+			</tr>
+
+			<tr>
+				<td>Licensed?</td>
+				<td>
+					<input type="radio" name="g">Yes&nbsp;&nbsp;
+					<input type="radio" name="g">No
+				</td>
+			</tr>
+				
+			<tr>
+				<td>License Number :</td>
+				<td><input type="number" name="lno" class="input"></td>
+			</tr>
+
+			<tr>
+				<td>Additional Comments :</td>
+				<td>
+					<textarea cols="80" rows="5" class="input"></textarea>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					
+				</td>
+				<td>
+					<button class="btn btn-primary"><a href="dashboard.html">Go to Dashboard</a></button>
+					<input type="submit" value="Submit" class="btn btn-primary">
+					<input type="reset" value="Reset" class="btn btn-primary">
+					<input type="button" value="Log Out" class="btn btn-primary">
+				</td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>
